@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.sqlite.InsertarA">
+
+    <TextView
+        android:id="@+id/textNombrea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="54dp"
+        android:text="Nombre"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textHorasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textNombrea"
+        android:layout_below="@+id/editNombrea"
+        android:layout_marginTop="27dp"
+        android:text="Horas"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editNombrea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textNombrea"
+        android:layout_alignBottom="@+id/textNombrea"
+        android:layout_toEndOf="@+id/textNombrea"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:id="@+id/editHorasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textHorasa"
+        android:layout_alignBottom="@+id/textHorasa"
+        android:layout_alignStart="@+id/editNombrea" />
+
+    <Button
+        android:id="@+id/botonAgregara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:text="Añadir"
+        android:layout_below="@+id/editHorasa"
+        android:layout_alignStart="@+id/editHorasa" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.sqlite.Consultas">
+
+    <Button
+        android:id="@+id/botonConsultaTodosAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="VER TODOS LOS ALUMNOS"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:layout_below="@+id/botonConsultaTodosProfesores"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/botonConsultaTodosProfesores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonConsultaTodosAlumnos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="VER TODOS LOS PROFESORES" />
+
+    <Button
+        android:id="@+id/botonConsultaAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="VER TODAS LAS ASIGNATURAS"
+        android:layout_below="@+id/botonConsultaTodosProfesores"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

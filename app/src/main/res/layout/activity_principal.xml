@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.sqlite.Principal">
+
+    <Button
+        android:id="@+id/botonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="INSERTAR ESTUDIANTE"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botonP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="INSERTAR PROFESOR" />
+
+    <Button
+        android:id="@+id/botonEliminare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELIMINAR ESTUDIANTE"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/botonEliminarBD"
+        android:layout_alignEnd="@+id/botonE" />
+
+    <Button
+        android:id="@+id/botonEliminarBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELIMINAR BASE DE DATOS"
+        android:layout_alignBottom="@+id/botonConsultas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:id="@+id/botonConsultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSULTAS"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp" />
+
+    <Button
+        android:id="@+id/botonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="INSERTAR ASIGNATURAS" />
+</RelativeLayout>
